@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ウチ、くる？ — VRoidのキャラクターが、あなたの部屋で暮らしはじめる</title>
+<meta name="description" content="Meta Quest 3 向けMRアプリ「ウチ、くる？」。VRoid Hubのキャラクターがパススルーで見えるあなたの部屋に遊びに来ます。">
+<meta property="og:title" content="ウチ、くる？">
+<meta property="og:description" content="VRoidのキャラクターが、あなたの部屋で暮らしはじめる — Meta Quest 3 MRアプリ">
+<meta property="og:image" content="https://sticker.github.io/uchikuru/assets/cover.png">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<style>
+  :root {
+    --cream: #FCF4EB; --pink: #FFD2E0; --bubble: #FFFDFA;
+    --stroke: #EE94AC; --brown: #5C3D29; --accent: #E66B85; --soft: #806040;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+    color: var(--brown);
+    background:
+      radial-gradient(circle at 12px 12px, rgba(255,248,243,.5) 7px, transparent 8px) 0 0/104px 104px,
+      radial-gradient(circle at 64px 64px, rgba(255,248,243,.5) 7px, transparent 8px) 0 0/104px 104px,
+      linear-gradient(180deg, var(--cream), var(--pink));
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
+  .logo { display: block; max-width: 520px; width: 90%; margin: 24px auto 8px; }
+  .tagline { text-align: center; font-size: 1.05rem; color: var(--soft); margin-bottom: 40px; }
+  .card {
+    background: var(--bubble); border: 3px solid var(--stroke); border-radius: 28px;
+    padding: 28px 30px; margin: 26px 0; box-shadow: 0 6px 24px rgba(120,60,70,.14);
+  }
+  h2 { color: var(--accent); font-size: 1.25rem; margin-bottom: 14px; }
+  p, li { line-height: 1.9; }
+  ul { padding-left: 1.4em; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 2px dotted #F3C4D2; }
+  th { color: var(--accent); font-weight: 600; }
+  td.price { white-space: nowrap; font-weight: 700; }
+  .badge {
+    display: inline-block; background: var(--pink); border-radius: 999px;
+    padding: 2px 14px; margin: 2px 4px 2px 0; font-size: .92rem;
+  }
+  .credits { font-size: .88rem; color: var(--soft); }
+  footer { text-align: center; font-size: .9rem; color: var(--soft); padding: 20px; }
+  a { color: var(--accent); }
+  .cta { text-align: center; margin: 30px 0 6px; }
+  .cta span {
+    display: inline-block; background: var(--accent); color: #fff; border-radius: 999px;
+    padding: 12px 34px; font-size: 1.05rem; box-shadow: 0 4px 14px rgba(230,107,133,.4);
+  }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="assets/logo.png" alt="ウチ、くる？">
+  <p class="tagline">VRoidのキャラクターが、あなたの部屋で暮らしはじめる<br>Meta Quest 3 向け MR アプリ</p>
+
+  <div class="card">
+    <h2>どんなアプリ？</h2>
+    <p>パススルーで見えるいつもの部屋に、VRoid のキャラクターが遊びに来ます。部屋を歩き回り、椅子に座り、話しかけてくる。頭をなでたり、手をつないだり、いっしょに YouTube を眺めたり — キャラクターと「同じ部屋で過ごす」ためのアプリです。</p>
+    <p style="margin-top:10px">
+      <span class="badge">同梱キャラクター3人</span>
+      <span class="badge">VRoid Hub 連携</span>
+      <span class="badge">ルームスキャン対応</span>
+      <span class="badge">日本語</span>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>追加コンテンツ（アプリ内購入）</h2>
+    <table>
+      <tr><th>アドオン</th><th>内容</th><th>価格</th></tr>
+      <tr><td>リモートデスクトップ</td><td>Mac の画面を部屋に浮かべて作業。Mac 用サーバーアプリは無料配布</td><td class="price">¥500</td></tr>
+      <tr><td>麻雀</td><td>本格4人打ちリーチ麻雀。鳴き・カン・リーチ・裏ドラ完備</td><td class="price">¥500</td></tr>
+      <tr><td>ゲームセット</td><td>リバーシ・ババ抜き・チェス。キャラクターが対戦相手に</td><td class="price">¥300</td></tr>
+      <tr><td>フルパック</td><td>上記すべてを解放</td><td class="price">¥1,000</td></tr>
+    </table>
+  </div>
+
+  <div class="cta"><span>Meta Horizon Store で近日公開</span></div>
+
+  <div class="card credits">
+    <h2>クレジット</h2>
+    <ul>
+      <li>キャラクターアニメーション: ピクシブ株式会社 VRoidプロジェクト</li>
+      <li>Animations: Adobe Mixamo</li>
+      <li>VRoid Hub 連携には pixiv 社の VRoid SDK を利用しています</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>お問い合わせ</h2>
+    <p>メール: <a href="mailto:hoshino.tetsuya@gmail.com">hoshino.tetsuya@gmail.com</a><br>
+       X: <a href="https://x.com/sticker_nice">@sticker_nice</a></p>
+  </div>
+
+  <footer>
+    <a href="privacy.html">プライバシーポリシー / Privacy Policy</a><br>
+    © 2026 NiceSticker
+  </footer>
+</main>
+</body>
+</html>

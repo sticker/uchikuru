@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — ウチ、くる？</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+<style>
+  :root {
+    --cream: #FCF4EB; --pink: #FFD2E0; --bubble: #FFFDFA;
+    --stroke: #EE94AC; --brown: #5C3D29; --accent: #E66B85; --soft: #806040;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+    color: var(--brown);
+    background: linear-gradient(180deg, var(--cream), var(--pink));
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+  .card {
+    background: var(--bubble); border: 3px solid var(--stroke); border-radius: 28px;
+    padding: 30px 32px; margin: 22px 0; box-shadow: 0 6px 24px rgba(120,60,70,.14);
+  }
+  h1 { font-size: 1.5rem; text-align: center; margin: 12px 0 6px; }
+  .date { text-align: center; color: var(--soft); font-size: .9rem; margin-bottom: 24px; }
+  h2 { color: var(--accent); font-size: 1.12rem; margin: 22px 0 8px; }
+  h2:first-of-type { margin-top: 0; }
+  p, li { line-height: 1.9; }
+  ul { padding-left: 1.4em; }
+  a { color: var(--accent); }
+  footer { text-align: center; font-size: .9rem; color: var(--soft); padding: 20px; }
+  .en { font-size: .95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="date">「ウチ、くる？」 最終更新日: 2026-07-20</p>
+
+  <div class="card">
+    <h2>基本方針</h2>
+    <p>本アプリは、アプリ独自のサーバーを持たず、利用者のデータを開発者が収集・保存することはありません。機能の実現のため、以下の情報が各サービス・機器の間で直接やり取りされます。</p>
+
+    <h2>VRoid Hub 連携（任意）</h2>
+    <ul>
+      <li>キャラクターモデルの取得のため、pixiv 社の VRoid Hub にログインできます。ログインは VRoid Hub の公式 OAuth 画面で行われ、本アプリはアクセストークンとモデルデータのみを受け取ります。パスワードが本アプリに渡ることはありません。</li>
+      <li>トークンとダウンロードしたモデルは、ヘッドセット内にのみ保存されます。</li>
+      <li>VRoid Hub の利用は pixiv 社の<a href="https://policies.pixiv.net/">プライバシーポリシー</a>に従います。</li>
+    </ul>
+
+    <h2>会話機能</h2>
+    <ul>
+      <li>キャラクターとの会話の生成に Google Gemini API を利用します。会話のテキストが Google に送信されます。音声・映像・室内のスキャンデータが送信されることはありません。</li>
+      <li>Google の API 利用は <a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a>に従います。</li>
+    </ul>
+
+    <h2>YouTube 視聴</h2>
+    <p>動画の再生は YouTube の埋め込みプレイヤーで行われ、Google の利用規約・プライバシーポリシーが適用されます。</p>
+
+    <h2>リモートデスクトップ（有料追加コンテンツ）</h2>
+    <p>お使いの Mac の画面を表示する機能は、同一ネットワーク内の Mac とヘッドセットが直接通信します。画面の映像が外部サーバーを経由することはありません。</p>
+
+    <h2>空間データ</h2>
+    <p>部屋のスキャンデータ（Scene / Passthrough）は Meta Horizon OS が管理し、キャラクターの配置・遮蔽のためにデバイス内でのみ利用されます。本アプリが室内の映像・形状を外部に送信することはありません。</p>
+
+    <h2>購入情報</h2>
+    <p>追加コンテンツの購入は Meta Horizon Store の決済基盤で処理されます。本アプリは購入の有無（エンタイトルメント）のみを参照し、決済情報には一切アクセスしません。</p>
+
+    <h2>分析・広告</h2>
+    <p>本アプリは、アクセス解析・行動トラッキング・広告 SDK を含みません。</p>
+
+    <h2>データの削除</h2>
+    <p>本アプリが保存するデータ（設定・ダウンロードしたモデル・ログイントークン）はすべてヘッドセット内にあり、アプリのアンインストールで削除されます。VRoid Hub 連携の解除は VRoid Hub の設定ページから行えます。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>メール: <a href="mailto:hoshino.tetsuya@gmail.com">hoshino.tetsuya@gmail.com</a><br>
+       X: <a href="https://x.com/sticker_nice">@sticker_nice</a></p>
+  </div>
+
+  <div class="card en">
+    <h2>Privacy Policy (English)</h2>
+    <p>"Uchi, Kuru?" (the App) does not operate its own servers and does not collect or store user data. To provide its features, data flows directly between your device and the following services: VRoid Hub (optional character model download via official OAuth; tokens and models stay on the headset), Google Gemini API (conversation text only — never audio, video, or room data), YouTube embedded player, your own Mac on the local network for the remote desktop add-on (no external relay), and Meta Horizon OS for room scanning (on-device only). Purchases are processed by the Meta Horizon Store; the App reads entitlements only. The App contains no analytics or advertising SDKs. All locally stored data is removed by uninstalling the App.</p>
+    <p style="margin-top:8px">Contact: <a href="mailto:hoshino.tetsuya@gmail.com">hoshino.tetsuya@gmail.com</a> / X <a href="https://x.com/sticker_nice">@sticker_nice</a></p>
+  </div>
+
+  <footer><a href="index.html">← ウチ、くる？ トップへ</a></footer>
+</main>
+</body>
+</html>
