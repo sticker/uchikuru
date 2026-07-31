@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MR VRoid Desk — put your Mac screen inside Uchi, Kuru?</title>
+<meta name="description" content="The free Mac app that streams a window into Uchi, Kuru? on Meta Quest 3 — download and setup.">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<style>
+  :root {
+    --cream: #FCF4EB; --pink: #FFD2E0; --bubble: #FFFDFA;
+    --stroke: #EE94AC; --brown: #5C3D29; --accent: #E66B85; --soft: #806040;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    color: var(--brown);
+    background:
+      radial-gradient(circle at 12px 12px, rgba(255,248,243,.5) 7px, transparent 8px) 0 0/104px 104px,
+      radial-gradient(circle at 64px 64px, rgba(255,248,243,.5) 7px, transparent 8px) 0 0/104px 104px,
+      linear-gradient(180deg, var(--cream), var(--pink));
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { text-align: center; font-size: 1.6rem; margin: 10px 0 6px; }
+  .tagline { text-align: center; font-size: 1.02rem; color: var(--soft); margin-bottom: 34px; }
+  .card {
+    background: var(--bubble); border: 3px solid var(--stroke); border-radius: 28px;
+    padding: 28px 30px; margin: 26px 0; box-shadow: 0 6px 24px rgba(120,60,70,.14);
+  }
+  h2 { color: var(--accent); font-size: 1.25rem; margin-bottom: 14px; }
+  h3 { font-size: 1.02rem; margin: 18px 0 6px; }
+  p, li { line-height: 1.9; }
+  ul, ol { padding-left: 1.4em; }
+  ol.steps > li { margin-bottom: 14px; }
+  code {
+    background: #FFF0F4; border: 1px solid #F3C4D2; border-radius: 6px;
+    padding: 1px 6px; font-size: .92rem; word-break: break-all;
+  }
+  .note { font-size: .93rem; color: var(--soft); }
+  .cta { text-align: center; margin: 22px 0 8px; }
+  .cta a {
+    display: inline-block; background: var(--accent); color: #fff; border-radius: 999px;
+    padding: 14px 38px; font-size: 1.06rem; text-decoration: none;
+    box-shadow: 0 4px 14px rgba(230,107,133,.4);
+  }
+  .req { text-align: center; font-size: .92rem; color: var(--soft); }
+  footer { text-align: center; font-size: .9rem; color: var(--soft); padding: 20px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <p style="text-align:right;font-size:.92rem"><a href="index.html" style="text-decoration:none">日本語</a> / <strong>English</strong></p>
+  <h1>MR VRoid Desk</h1>
+  <p class="tagline">The free Mac app that puts one of your Mac windows inside your room in <em>Uchi, Kuru?</em></p>
+
+  <div class="card">
+    <h2>What it is</h2>
+    <p>A menu bar app that streams a single Mac window to a floating panel in Quest 3. It has no Dock icon and no window of its own — it just waits in the menu bar. From the headset you can click, drag, scroll and type into that window.</p>
+    <p class="note">The video never leaves your <strong>local Wi-Fi</strong>. Nothing is sent to the internet or to any server of ours, and there is no account to create.</p>
+  </div>
+
+  <div class="card">
+    <h2>Download</h2>
+    <div class="cta"><a href="../assets/MR-VRoid-Desk.zip">Get MR VRoid Desk (free)</a></div>
+    <p class="req">macOS 13 Ventura or later · Apple Silicon and Intel<br>Your Quest and your Mac must be on the same Wi-Fi network</p>
+  </div>
+
+  <div class="card">
+    <h2>Setting it up</h2>
+    <ol class="steps">
+      <li><strong>Unzip it, move it to Applications, and open it.</strong><br>
+        A <strong>▣</strong> in the menu bar means it is ready and waiting.</li>
+      <li><strong>Allow Screen Recording.</strong><br>
+        You are asked on first launch. If you missed it:
+        System Settings → Privacy &amp; Security → Screen Recording →
+        turn on MR VRoid Desk.<br>
+        <span class="note">macOS only applies the grant on the next launch, so the app has to be <strong>reopened</strong> — it notices and offers you a Reopen button.</span></li>
+      <li><strong>To click and type as well, allow Accessibility in the same place.</strong><br>
+        <span class="note">Without it, everything still works — view only.</span></li>
+      <li><strong>In the Quest app, take <em>Your Mac</em> off the shelf and tap Search.</strong><br>
+        Your Mac appears by name; pick it, then pick the window you want to see.</li>
+    </ol>
+    <h3>Never launch it again</h3>
+    <p>On first launch it offers to open automatically when your Mac starts. Say yes and the Mac is simply always ready when you put the headset on. You can change it later from the ▣ menu → <em>Open at login</em>.</p>
+  </div>
+
+  <div class="card">
+    <h2>If macOS says the developer cannot be verified</h2>
+    <p>The current build is not yet notarized by Apple, so macOS asks once.</p>
+    <ol>
+      <li>Right-click (or control-click) the app → <strong>Open</strong> → <strong>Open</strong> again.</li>
+      <li>If it still refuses: System Settings → Privacy &amp; Security, scroll down to the
+        "MR VRoid Desk was blocked…" line and click <strong>Open Anyway</strong>.</li>
+    </ol>
+    <p class="note">This step goes away once the notarized build replaces this one.</p>
+  </div>
+
+  <div class="card">
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li><strong>The Quest cannot find the Mac</strong> — check that both are on the same Wi-Fi. Guest networks and access points with client isolation block the automatic discovery. In that case click the IP address in the ▣ menu to copy it, and paste it into <em>Enter IP manually</em> on the Quest.</li>
+      <li><strong>No windows are listed</strong> — Screen Recording is not granted, or the app has not been reopened since you granted it. A ⚠︎ in the menu bar says which.</li>
+      <li><strong>Clicks do nothing</strong> — Accessibility is not granted.</li>
+      <li><strong>The icon shows 🛑</strong> — port 8765 is taken. Check whether another copy of MR VRoid Desk is already running.</li>
+      <li><strong>Stuttering or lag</strong> — set quality to <em>Motion</em> on the Quest panel and make the panel a little smaller. For reading text, <em>Sharpest</em> with a large panel is clearest.</li>
+      <li><strong>Firewall</strong> — allow incoming connections (TCP 8765, UDP 8766).</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><a href="../index-en.html">← Back to Uchi, Kuru?</a></p>
+    <p>© NiceSticker</p>
+  </footer>
+</main>
+</body>
+</html>

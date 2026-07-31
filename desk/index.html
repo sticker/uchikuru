@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MR VRoid Desk — Macの画面を「ウチ、くる？」にうつす</title>
+<meta name="description" content="Meta Quest 3 向けMRアプリ「ウチ、くる？」で Mac の画面をうつすための、無料の Mac 用アプリ。導入と設定の手順。">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<style>
+  :root {
+    --cream: #FCF4EB; --pink: #FFD2E0; --bubble: #FFFDFA;
+    --stroke: #EE94AC; --brown: #5C3D29; --accent: #E66B85; --soft: #806040;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+    color: var(--brown);
+    background:
+      radial-gradient(circle at 12px 12px, rgba(255,248,243,.5) 7px, transparent 8px) 0 0/104px 104px,
+      radial-gradient(circle at 64px 64px, rgba(255,248,243,.5) 7px, transparent 8px) 0 0/104px 104px,
+      linear-gradient(180deg, var(--cream), var(--pink));
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { text-align: center; font-size: 1.6rem; margin: 10px 0 6px; }
+  .tagline { text-align: center; font-size: 1.02rem; color: var(--soft); margin-bottom: 34px; }
+  .card {
+    background: var(--bubble); border: 3px solid var(--stroke); border-radius: 28px;
+    padding: 28px 30px; margin: 26px 0; box-shadow: 0 6px 24px rgba(120,60,70,.14);
+  }
+  h2 { color: var(--accent); font-size: 1.25rem; margin-bottom: 14px; }
+  h3 { font-size: 1.02rem; margin: 18px 0 6px; }
+  p, li { line-height: 1.9; }
+  ul, ol { padding-left: 1.4em; }
+  ol.steps > li { margin-bottom: 14px; }
+  code {
+    background: #FFF0F4; border: 1px solid #F3C4D2; border-radius: 6px;
+    padding: 1px 6px; font-size: .92rem; word-break: break-all;
+  }
+  .note { font-size: .93rem; color: var(--soft); }
+  .cta { text-align: center; margin: 22px 0 8px; }
+  .cta a {
+    display: inline-block; background: var(--accent); color: #fff; border-radius: 999px;
+    padding: 14px 38px; font-size: 1.06rem; text-decoration: none;
+    box-shadow: 0 4px 14px rgba(230,107,133,.4);
+  }
+  .req { text-align: center; font-size: .92rem; color: var(--soft); }
+  footer { text-align: center; font-size: .9rem; color: var(--soft); padding: 20px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <p style="text-align:right;font-size:.92rem"><strong>日本語</strong> / <a href="en.html" style="text-decoration:none">English</a></p>
+  <h1>MR VRoid Desk</h1>
+  <p class="tagline">Mac の画面を「ウチ、くる？」の部屋にうつすための、無料の Mac 用アプリ</p>
+
+  <div class="card">
+    <h2>これは何?</h2>
+    <p>Quest 3 の中に浮かぶパネルへ、Mac のウィンドウを 1 枚だけ映すためのアプリです。メニューバーに常駐して待っているだけで、Dock にも出ません。ヘッドセット側から見て、クリックやスクロール、文字入力もできます。</p>
+    <p class="note">映像は<strong>同じ Wi-Fi(LAN)の中だけ</strong>を流れます。インターネットや外部のサーバーには何も送りません。アカウント登録もありません。</p>
+  </div>
+
+  <div class="card">
+    <h2>ダウンロード</h2>
+    <div class="cta"><a href="../assets/MR-VRoid-Desk.zip">MR VRoid Desk を入手（無料）</a></div>
+    <p class="req">macOS 13 Ventura 以降 / Apple Silicon・Intel 両対応<br>Quest と Mac が同じ Wi-Fi につながっている必要があります</p>
+  </div>
+
+  <div class="card">
+    <h2>はじめかた</h2>
+    <ol class="steps">
+      <li><strong>解凍して「アプリケーション」フォルダへ入れ、開きます。</strong><br>
+        メニューバーに <strong>▣</strong> のアイコンが出れば待機中です。</li>
+      <li><strong>「画面収録」を許可します。</strong><br>
+        初回起動時にダイアログが出ます。見逃したときは
+        システム設定 → プライバシーとセキュリティ → 画面収録 →
+        「MR VRoid Desk」をオン。<br>
+        <span class="note">許可のあとは<strong>アプリを開き直す必要があります</strong>（アプリが気づいて「開き直す」ボタンを出します）。</span></li>
+      <li><strong>クリックやキー入力も使うなら、「アクセシビリティ」も同じ場所で許可します。</strong><br>
+        <span class="note">許可しない場合は、見るだけのモードとして動きます。</span></li>
+      <li><strong>Quest 側で棚から「Macの画面」を出し、「さがす」を押します。</strong><br>
+        同じ Wi-Fi にいる Mac が名前で出てくるので、選んで、うつしたいウィンドウを選びます。</li>
+    </ol>
+    <h3>毎回起動しなくていいようにする</h3>
+    <p>初回起動時に「Macの起動時に自動で開きますか?」と聞かれます。ここで「自動で開く」を選べば、次からは Mac の電源を入れるだけで待機状態になります。あとから変えるときは、メニューバーの ▣ →「Macの起動時に自動で開く」。</p>
+  </div>
+
+  <div class="card">
+    <h2>「開発元を確認できないため開けません」と出たら</h2>
+    <p>現在配布しているビルドは Apple の公証（notarization）前のため、初回だけ macOS が確認を求めます。</p>
+    <ol>
+      <li>アプリを右クリック（control キーを押しながらクリック）→ <strong>開く</strong> → もう一度 <strong>開く</strong></li>
+      <li>それでも開かないときは、システム設定 → プライバシーとセキュリティ → 下のほうに出る
+        「"MR VRoid Desk" は開発元を確認できないため…」の右の <strong>このまま開く</strong></li>
+    </ol>
+    <p class="note">公証済みのビルドに差し替え次第、この手順は不要になります。</p>
+  </div>
+
+  <div class="card">
+    <h2>うまくいかないとき</h2>
+    <ul>
+      <li><strong>Quest から Mac が見つからない</strong> — 同じ Wi-Fi につながっているか確認してください。ゲスト用ネットワークや、端末どうしの通信を遮断する設定（AP アイソレーション）では自動検出できません。その場合はメニューバーの ▣ に出ている IP アドレスをクリックしてコピーし、Quest 側の「IPを手入力する…」に入れてください。</li>
+      <li><strong>ウィンドウが 1 つも出てこない</strong> — 画面収録が未許可か、許可のあとアプリを開き直していません。メニューバーの ▣ が ⚠︎ になっていたら、そこに理由が書いてあります。</li>
+      <li><strong>クリックが効かない</strong> — 「アクセシビリティ」が未許可です。</li>
+      <li><strong>アイコンが 🛑 になる</strong> — ポート 8765 を他のアプリが使っています。すでに MR VRoid Desk が起動していないか確認してください。</li>
+      <li><strong>カクつく・遅れる</strong> — Quest 側のパネルで画質を「うごき」に、パネルを少し小さくすると軽くなります。文字を読むときは「最高」＋パネル大きめが最も鮮明です。</li>
+      <li><strong>ファイアウォール</strong> — 受信接続を許可してください（TCP 8765 / UDP 8766）。</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><a href="../index.html">← ウチ、くる？ のページへ</a></p>
+    <p>© NiceSticker</p>
+  </footer>
+</main>
+</body>
+</html>
