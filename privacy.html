@@ -67,7 +67,7 @@
 
     <h2>購入情報</h2>
     <p>追加コンテンツの購入は Meta Horizon Store の決済基盤で処理されます。本アプリは購入の有無（エンタイトルメント）のみを参照し、決済情報には一切アクセスしません。</p>
-    <p>購入したコンテンツの所有者を判定するため、Meta Horizon Store のアプリ内購入機能を利用します。本アプリが Meta アカウントのユーザー ID を取得・保存・外部送信・第三者提供することはありません。ユーザー名、プロフィール写真、フレンドリストなどのソーシャル情報も取得しません。</p>
+    <p>購入したコンテンツの所有者を判定するため、Meta Horizon Store のアプリ内購入機能を利用します。この確認のために、本アプリは Meta Platform SDK を通じてお客様のユーザー ID と基本プロフィール（ユーザー名・プロフィール写真）にアクセスすることがあります。これらは購入の照会・復元のためだけに端末内で使用され、本アプリが表示・保存・外部送信・第三者提供することはありません。フレンドリストその他のソーシャル情報にはアクセスしません。</p>
 
     <h2>分析・広告</h2>
     <p>本アプリは、アクセス解析・行動トラッキング・広告 SDK を含みません。</p>
@@ -82,7 +82,7 @@
 
   <div class="card en">
     <h2>Privacy Policy (English)</h2>
-    <p>"Uchi, Kuru?" (the App) does not operate its own servers and does not collect or store user data. To provide its features, data flows directly between your device and the following services: VRoid Hub (optional character model download via official OAuth; tokens and models stay on the headset), Google Gemini API (conversation text only — never audio, video, or room data), YouTube embedded player, your own Mac on the local network for the remote desktop add-on (no external relay), and Meta Horizon OS for room scanning (on-device only). Purchases are processed by the Meta Horizon Store; the App reads entitlements only, and never obtains, stores, transmits or shares your Meta account user ID, username, profile picture or friends list. The App contains no analytics or advertising SDKs. All locally stored data is removed by uninstalling the App.</p>
+    <p>"Uchi, Kuru?" (the App) does not operate its own servers and does not collect or store user data. To provide its features, data flows directly between your device and the following services: VRoid Hub (optional character model download via official OAuth; tokens and models stay on the headset), Google Gemini API (conversation text only — never audio, video, or room data), YouTube embedded player, your own Mac on the local network for the remote desktop add-on (no external relay), and Meta Horizon OS for room scanning (on-device only). Purchases are processed by the Meta Horizon Store. To verify which add-ons your account owns, the App may access your Meta user ID and basic profile (username and profile picture) through the Meta Platform SDK; these are used on-device solely to query and restore purchases, and the App never displays, stores, transmits or shares them. The App does not access your friends list or any other social data. The App contains no analytics or advertising SDKs. All locally stored data is removed by uninstalling the App.</p>
     <p style="margin-top:8px">Contact: <a href="mailto:hoshino.tetsuya@gmail.com">hoshino.tetsuya@gmail.com</a> / X <a href="https://x.com/sticker_nice">@sticker_nice</a></p>
   </div>
 
