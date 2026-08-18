@@ -37,11 +37,21 @@
 <body>
 <main>
   <h1>プライバシーポリシー</h1>
-  <p class="date">「ウチ、くる？」 最終更新日: 2026-07-20</p>
+  <p class="date">「ウチ、くる？」 最終更新日: 2026-08-18</p>
 
   <div class="card">
     <h2>基本方針</h2>
-    <p>本アプリは、アプリ独自のサーバーを持たず、利用者のデータを開発者が収集・保存することはありません。機能の実現のため、以下の情報が各サービス・機器の間で直接やり取りされます。</p>
+    <p>本アプリは、機能の提供のために以下に列挙するデータを収集・処理します。開発者は独自のサーバーを運用しておらず、収集したデータが開発者のサーバーに送信・蓄積されることはありません。データはすべて (1) お使いのヘッドセット内に保存されるか、(2) 機能の提供に必要な範囲で下記の各サービスとの間で直接やり取りされます。</p>
+
+    <h2>収集・処理するデータの一覧</h2>
+    <ul>
+      <li><b>Meta ユーザー ID・基本プロフィール（ユーザー名・プロフィール写真）</b> — アプリ内購入の照会・復元のため、Meta Platform SDK を通じてアクセスします。端末内での購入判定にのみ使用し、表示・保存・外部送信・第三者提供はしません。</li>
+      <li><b>購入情報（エンタイトルメント）</b> — どの追加コンテンツを所有しているかを Meta Horizon Store から取得し、該当コンテンツの解錠に使用します。決済情報（カード番号等）には一切アクセスしません。</li>
+      <li><b>VRoid Hub のアカウント連携情報（任意）</b> — ログインした場合、アクセストークンとダウンロードしたモデルをヘッドセット内に保存し、モデルの取得・表示に使用します。</li>
+      <li><b>会話テキスト</b> — キャラクターの返答生成のため、あなたが選択した会話の内容が Google Gemini API に送信されます。開発者がその内容を受け取ったり保存したりすることはありません。</li>
+      <li><b>アプリが端末内に保存するデータ</b> — 設定、部屋のレイアウトとキャラクターの配置・大きさ、キャラクターとの思い出（一緒に遊んだゲーム名などの記録）、撮影した写真、ユーザーが追加したモデル・音声ファイル・API キー。すべてヘッドセット内にのみ保存され、外部に送信されません。</li>
+      <li><b>空間データ（部屋のスキャン）</b> — Meta Horizon OS が管理し、キャラクターの配置・遮蔽のために端末内でのみ参照します。室内の映像・形状を保存・送信することはありません。</li>
+    </ul>
 
     <h2>VRoid Hub 連携（任意）</h2>
     <ul>
@@ -73,7 +83,13 @@
     <p>本アプリは、アクセス解析・行動トラッキング・広告 SDK を含みません。</p>
 
     <h2>データの削除</h2>
-    <p>本アプリが保存するデータ（設定・ダウンロードしたモデル・ログイントークン）はすべてヘッドセット内にあり、アプリのアンインストールで削除されます。VRoid Hub 連携の解除は VRoid Hub の設定ページから行えます。</p>
+    <p>本アプリが扱うデータは、次のいずれの方法でも削除できます。</p>
+    <ul>
+      <li><b>アプリ内から:</b> 設定メニュー → ルーム → 「アプリのデータをすべて消す」。写真・設定・ログイン情報・思い出を含む、本アプリが端末内に保存したすべてのデータを消去します。</li>
+      <li><b>アンインストール:</b> アプリを削除すると、端末内のデータはすべて削除されます。</li>
+      <li><b>削除のリクエスト:</b> 下記のお問い合わせ先にご連絡いただければ対応します（開発者はサーバーにデータを保持していないため、通常は上記の端末内削除ですべて完了します）。</li>
+    </ul>
+    <p>連携先サービスに保存されたデータの削除は、各サービスの手続きに従います: Meta アカウントのデータは <a href="https://www.meta.com/help/">Meta</a>、VRoid Hub のデータは <a href="https://hub.vroid.com/">pixiv</a>、Gemini API に送信されたデータは <a href="https://policies.google.com/privacy">Google</a>。</p>
 
     <h2>お問い合わせ</h2>
     <p>メール: <a href="mailto:hoshino.tetsuya@gmail.com">hoshino.tetsuya@gmail.com</a><br>
@@ -82,7 +98,18 @@
 
   <div class="card en">
     <h2>Privacy Policy (English)</h2>
-    <p>"Uchi, Kuru?" (the App) does not operate its own servers and does not collect or store user data. To provide its features, data flows directly between your device and the following services: VRoid Hub (optional character model download via official OAuth; tokens and models stay on the headset), Google Gemini API (conversation text only — never audio, video, or room data), YouTube embedded player, your own Mac on the local network for the remote desktop add-on (no external relay), and Meta Horizon OS for room scanning (on-device only). Purchases are processed by the Meta Horizon Store. To verify which add-ons your account owns, the App may access your Meta user ID and basic profile (username and profile picture) through the Meta Platform SDK; these are used on-device solely to query and restore purchases, and the App never displays, stores, transmits or shares them. The App does not access your friends list or any other social data. The App contains no analytics or advertising SDKs. All locally stored data is removed by uninstalling the App.</p>
+    <p>"Uchi, Kuru?" (the App) collects and processes the data listed below to provide its features. The developer operates no servers of its own, and no collected data is ever sent to or stored by the developer. All data either stays on your headset or flows directly between your device and the services named below.</p>
+    <p><b>Data the App collects and how it is used:</b></p>
+    <ul>
+      <li><b>Meta user ID and basic profile (username, profile picture)</b> — accessed through the Meta Platform SDK to verify and restore in-app purchases. Used on-device only; never displayed, stored, transmitted or shared.</li>
+      <li><b>Purchase entitlements</b> — read from the Meta Horizon Store to unlock the add-ons your account owns. The App never accesses payment details.</li>
+      <li><b>VRoid Hub account link (optional)</b> — if you sign in, the access token and downloaded models are stored on the headset and used to fetch and display your models.</li>
+      <li><b>Conversation text</b> — the dialogue you choose is sent to the Google Gemini API to generate character replies. The developer never receives or stores it.</li>
+      <li><b>Data stored on the device</b> — settings, room layout and character placement, shared memories (e.g. which games you played together), photos you take, and any models, voice files or API keys you add yourself. Stored on the headset only.</li>
+      <li><b>Room scan data</b> — managed by Meta Horizon OS and read on-device only, for character placement and occlusion. Never stored or transmitted by the App.</li>
+    </ul>
+    <p><b>Data deletion:</b> you can delete everything the App has stored in any of three ways: in-app via Settings → Room → "Erase all app data" (removes photos, settings, logins and memories); by uninstalling the App; or by contacting us at the address below (since the developer holds no data on any server, on-device deletion normally completes the process). For data held by connected services, please use the respective providers' procedures: Meta account data via Meta, VRoid Hub data via pixiv, Gemini API data via Google.</p>
+    <p>The App contains no analytics or advertising SDKs.</p>
     <p style="margin-top:8px">Contact: <a href="mailto:hoshino.tetsuya@gmail.com">hoshino.tetsuya@gmail.com</a> / X <a href="https://x.com/sticker_nice">@sticker_nice</a></p>
   </div>
 
