@@ -49,9 +49,18 @@
   footer { text-align: center; font-size: .9rem; color: var(--soft); padding: 20px; }
   a { color: var(--accent); }
   .cta { text-align: center; margin: 30px 0 6px; }
-  .cta span {
+  .cta a {
     display: inline-block; background: var(--accent); color: #fff; border-radius: 999px;
-    padding: 12px 34px; font-size: 1.05rem; box-shadow: 0 4px 14px rgba(230,107,133,.4);
+    padding: 14px 38px; font-size: 1.1rem; font-weight: 700; text-decoration: none;
+    line-height: 1.35; box-shadow: 0 4px 14px rgba(230,107,133,.4);
+  }
+  .cta a:hover { background: #D9556F; }
+  @media (max-width: 430px) {
+    .cta a { padding: 12px 20px; font-size: .95rem; }
+  }
+  .keyvisual {
+    display: block; width: 100%; border-radius: 24px; margin: 8px 0 30px;
+    border: 3px solid var(--stroke); box-shadow: 0 6px 24px rgba(120,60,70,.14);
   }
 </style>
 </head>
@@ -61,6 +70,10 @@
   <img class="logo" src="assets/logo.png" alt="Uchi, Kuru?">
   <p class="tagline">Your VRoid characters, living in your room<br>A mixed-reality app for Meta Quest 3</p>
 
+  <div class="cta"><a href="https://www.meta.com/experiences/uchi-kuru/1601758804852724/">View on the Meta Horizon Store</a></div>
+
+  <img class="keyvisual" src="assets/cover.png" alt="Three characters relaxing in your room">
+
   <div class="card">
     <h2>What is it?</h2>
     <p>Through passthrough you still see your own room — and VRoid characters come to visit. They wander around, sit on your chairs, and talk to you. Pat their heads, hold hands, watch YouTube together. "Uchi, Kuru?" (Wanna Come Over?) is an app for sharing your room with your favorite characters.</p>
@@ -68,6 +81,7 @@
       <span class="badge">3 bundled characters</span>
       <span class="badge">VRoid Hub integration</span>
       <span class="badge">Room-scan aware</span>
+      <span class="badge">Hand tracking</span>
       <span class="badge">Japanese / English</span>
     </p>
   </div>
@@ -83,7 +97,7 @@
     </table>
   </div>
 
-  <div class="cta"><span>Coming soon to the Meta Horizon Store</span></div>
+  <div class="cta"><a href="https://www.meta.com/experiences/uchi-kuru/1601758804852724/">Get it on the Meta Horizon Store</a></div>
 
   <div class="card credits">
     <h2>Credits</h2>
