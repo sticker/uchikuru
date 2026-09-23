@@ -44,6 +44,21 @@
     padding: 2px 14px; margin: 2px 4px 2px 0; font-size: .92rem;
   }
   .credits { font-size: .88rem; color: var(--soft); }
+  /* 大人版への案内。本編と同じ札だが、縁を落ち着かせて主張を一段下げる */
+  .adult { border-color: #D9A8B6; background: #FFF8FA; }
+  .adult h2 { display: flex; align-items: center; gap: 10px; }
+  .adult .r18 {
+    background: var(--accent); color: #fff; border-radius: 999px;
+    padding: 1px 12px; font-size: .78rem; letter-spacing: .06em;
+  }
+  .adult .mini { font-size: .92rem; color: var(--soft); margin-top: 8px; }
+  .adult .gate { text-align: center; margin-top: 18px; }
+  .adult .gate a {
+    display: inline-block; border: 2px solid var(--accent); color: var(--accent);
+    border-radius: 999px; padding: 10px 30px; font-weight: 700; text-decoration: none;
+  }
+  .adult .gate a:hover { background: var(--accent); color: #fff; }
+  .adult .gate small { display: block; margin-top: 8px; font-size: .84rem; color: var(--soft); }
   footer { text-align: center; font-size: .9rem; color: var(--soft); padding: 20px; }
   a { color: var(--accent); }
   .cta { text-align: center; margin: 30px 0 6px; }
@@ -95,6 +110,14 @@
   </div>
 
   <div class="cta"><a href="https://www.meta.com/experiences/uchi-kuru/1601758804852724/">Meta Horizon Store でダウンロード</a></div>
+
+  <div class="card adult">
+    <h2>大人版もあります<span class="r18">18+</span></h2>
+    <p>同じ三人の、別のアプリです。<b>ウチ、くる？（R18的な意味で❤︎）</b>。脱衣麻雀と、その先まで。日本語フルボイス、買い切り。Meta のストアでは出せない内容なので、DLsite と FANZA で配っています（Quest 3 / 3S に手で入れる形です）。</p>
+    <p class="mini">このアプリとは別のアプリとして並びます。こちらで買った追加コンテンツは、大人版には最初から全部入っています。</p>
+    <p class="gate"><a href="https://uchikuru-r18.pages.dev/" target="_blank" rel="noopener">大人版のページを見る</a><br>
+      <small>18 歳以上の方向けのページが開きます。</small></p>
+  </div>
 
   <div class="card credits">
     <h2>クレジット</h2>
